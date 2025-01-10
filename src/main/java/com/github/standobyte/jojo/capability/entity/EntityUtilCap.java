@@ -77,7 +77,7 @@ public class EntityUtilCap {
     public void updateEntityTimeStop(boolean stopInTime) {
         if (stopInTime) {
             stoppedInTime = true;
-            if (!(entity instanceof ProjectileEntity)){
+            if (!(entity instanceof ProjectileEntity && ((ProjectileEntity)entity).getOwner() != null)){
                 entity.canUpdate(false);
             }
             
