@@ -238,7 +238,7 @@ public class TimeStop extends StandAction {
     
     public static class Builder extends StandAction.AbstractBuilder<Builder> {
         private int timeStopMaxTicks = 100;
-        private int timeStopMaxTicksZombie = 120;
+        private int timeStopMaxTicksZombie = 100;
         private int timeStopMaxTicksVampire = 180;
         private int timeStopMaxTicksPillarman = 180;
         private float timeStopLearningPerTick = 0.1F;
